@@ -7,7 +7,7 @@ export const getAllContacts = async () => {
     const contacts = JSON.parse(data);
     return contacts;
   } catch (error) {
-    console.log('Помилка: ', error);
+    console.error('Помилка: ', error);
   }
 };
 

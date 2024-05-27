@@ -13,7 +13,7 @@ export const addOneContact = async () => {
 
     await fs.writeFile(PATH_DB, toStringify);
   } catch (error) {
-    console.log('Помилка: ', error);
+    console.error('Помилка: ', error);
   }
 };
 
